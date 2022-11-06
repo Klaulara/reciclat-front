@@ -6,7 +6,8 @@ import Layout from './assets/components/Layout';
 import Index from './assets/pages/Index';
 import Blog from './assets/pages/Blog';
 import Information from './assets/pages/Information';
-import { loader as infoLoader } from './assets/utils/recicleLibrary'
+import { loader as infoLoader } from './assets/data/recicleLibrary';
+import InfoBins, { loader as binsId } from './assets/pages/InfoBins';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
         path: '/informacion',
         element: <Information />,
         loader: infoLoader
+      },
+      {
+        path: 'informacion/:id/bins',
+        element: <InfoBins />,
+        loader: binsId,
       }
     ]
   },
