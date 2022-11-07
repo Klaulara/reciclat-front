@@ -8,6 +8,7 @@ import Blog from './assets/pages/Blog';
 import Information from './assets/pages/Information';
 import { loader as infoLoader } from './assets/data/recicleLibrary';
 import InfoBins, { loader as binsId } from './assets/pages/InfoBins';
+import { loader as blogLoader } from './assets/data/blogData'
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/blog',
-        element: <Blog />
+        element: <Blog />,
+        loader: blogLoader
       },
       {
         path: '/informacion',
