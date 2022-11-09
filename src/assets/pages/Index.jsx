@@ -8,7 +8,7 @@ const Index = () => {
       </div>
       <div>
         <p className="text-xl m-3">Este es un proyecto colaborativo y completamente gratuito.</p>
-        <p className="text-xl m-3">Ayudanos a rellenar todos los puntos de tu ciudad <a className='text-green-600 font-bold' href="/puntos"> aqui.</a></p>
+        <p className="text-xl m-3">Ayudanos a rellenar todos los puntos de tu ciudad <a className='text-green-600 font-bold' href="http://reciclat.live/puntos"> aqui.</a></p>
         <p className="text-xl m-3">Aprende sobre como y que puedes reciclar en cada tarro.</p>
       </div>
     </div>
