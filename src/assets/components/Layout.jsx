@@ -34,7 +34,15 @@ const Layout = () => {
             } text-2xl block mt-4 hover:text-teal-800 text-white text-center`}
             to="/informacion"
           >
-            Info
+            Información
+          </Link>
+          <Link
+            className={`${
+              location.pathname === "/puntos" ? "text-teal-900" : "text-white"
+            } text-2xl block mt-4 hover:text-teal-800 text-white text-center`}
+            to="/puntos"
+          >
+            Agrega un punto
           </Link>
         </nav>
       </aside>
