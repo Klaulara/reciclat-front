@@ -1,9 +1,12 @@
 import { useLoaderData, useNavigate } from "react-router-dom";
 import image from '../img/blog.png'
 
-const url = "http://localhost:5173/infoBins.json";
+const url = "infoBins.json";
 const getData = async () => {
-  const resp = await fetch(url);
+  const resp = await fetch(url, {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+  });
   const data = await resp.json();
   return data.bins;
 };
